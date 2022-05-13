@@ -1,0 +1,25 @@
+.header {
+  width: 60%;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > div {
+  font-size: 22px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.header > button {
+  border: none;
+  background: none;
+
+  font-size: 22px;
+  color: inherit;
+  cursor: pointer;
+}
+.header i {
+  margin-left: 20px;
+}

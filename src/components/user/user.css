@@ -1,0 +1,89 @@
+.user-container {
+  width: 60%;
+
+  margin-top: 20px;
+
+  border: none;
+  border-radius: 6px;
+  padding: 40px 20px 30px 20px;
+
+  display: flex;
+}
+
+.user-left {
+  flex: 1;
+  padding: 20px;
+}
+.user-left > img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.user-right {
+  flex: 3;
+  padding: 5px;
+}
+
+.user-right-name {
+  display: flex;
+  justify-content: space-between;
+}
+.user-right-name-wrapper > h1 {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 700;
+}
+.user-right-name-wrapper > p {
+  color: rgb(34, 34, 232);
+  font-size: 16px;
+  margin-top: 5px;
+}
+.user-right-name > p {
+  font-size: 17px;
+  color: inherit;
+}
+
+.bio {
+  font-size: 18px;
+  color: inherit;
+
+  margin-top: 20px;
+}
+
+.repos-div {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 30px 25px;
+  border-radius: 12px;
+}
+.repos-div div p:nth-child(1) {
+  color: inherit;
+  font-size: 18px;
+  text-align: center;
+}
+.repos-div div p:nth-child(2) {
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.additional-info {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: inherit;
+}
+.additional-info p {
+  margin-top: 10px;
+}
+.additional-info i {
+  margin-right: 20px;
+}
