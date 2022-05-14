@@ -23,7 +23,7 @@ const SearchForm = ({ searchHandler, theme, colors }) => {
       <i className="fa-solid fa-magnifying-glass"></i>
       <input 
         type='text' 
-        placeholder='Search GitHub username...'
+        placeholder='Search user...'
         value={word} 
         onChange={({ target }) => setWord(target.value)}
       />
