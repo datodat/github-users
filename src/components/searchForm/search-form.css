@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .search-form > i {
@@ -22,7 +23,6 @@
   border: none;
   background: none;
 
-  padding: 16px;
   font-size: 18px;
   color: inherit;
 }

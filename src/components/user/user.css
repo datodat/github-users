@@ -168,4 +168,10 @@
   .bio {
     text-align: center;
   }
+  .additional-info p {
+    font-size: 12px;
+  }
+  .additional-info i {
+    margin-right: 5px;
+  }
 }
