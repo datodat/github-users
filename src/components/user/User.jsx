@@ -1,4 +1,4 @@
-import React from 'react';
+// Css
 import './user.css';
 
 const User = ({ user, theme, colors }) => {
@@ -11,15 +11,33 @@ const User = ({ user, theme, colors }) => {
         <img src={user.avatar_url ? user.avatar_url : ''} alt='user' />
       </div>
       <div className="user-right">
+        {/* User name - created date */}
         <div className='user-right-name'>
           <div className="user-right-name-wrapper">
-            <h1>{user.login ? user.login : 'Not Available'}</h1>
-            <p>{user.name ? user.name : 'Not Available'}</p>
+            <a 
+              href={`https://github.com/${user.login}`} 
+              target='_blank' 
+              rel='noopener noreferrer'
+            >
+              {user.login ? user.login : 'Not Available'}
+            </a>
+            <p>
+              {user.name ? user.name : 'Not Available'}
+            </p>
           </div>
-          <p>Joined {user.created_at ? user.created_at : 'Not Available'}</p>
+          <p className='user-created'>
+            Joined {user.created_at ? user.created_at : 'Not Available'}
+          </p>
         </div>
-        <p className='bio'>{user.bio ? user.bio : 'This profile has no bio'}</p>
-        <div style={{ backgroundColor: theme ? colors[0] : colors[2] }} className="repos-div">
+        {/* User bio */}
+        <p className='bio'>
+          {user.bio ? user.bio : 'This profile has no bio'}
+        </p>
+        {/* User repos followers */}
+        <div 
+          style={{ backgroundColor: theme ? colors[0] : colors[2] }} 
+          className="repos-div"
+        >
           <div className="repos">
             <p>Repos</p>
             <p>{user.public_repos ? user.public_repos : 'Not Available'}</p>
@@ -33,6 +51,7 @@ const User = ({ user, theme, colors }) => {
             <p>{user.following ? user.following : 'Not Available'}</p>
           </div>
         </div>
+        {/* User additional info */}
         <div className="additional-info">
           <div>
             <p>

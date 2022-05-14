@@ -1,5 +1,5 @@
 .header {
-  width: 60%;
+  width: 950px;
   padding: 20px 0;
 
   display: flex;
@@ -22,4 +22,17 @@
 }
 .header i {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header > div,
+  .header > button {
+    font-size: 16px;
+  }
 }

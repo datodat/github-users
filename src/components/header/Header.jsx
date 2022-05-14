@@ -1,10 +1,12 @@
-import React from 'react';
+// Css
 import './header.css';
 
 const Header = ({ theme, changeTheme }) => {
   return (
     <div className='header'>
-      <div>devfinder</div>
+      <div>
+        devfinder
+      </div>
       <button onClick={changeTheme}>
         {theme ? 'DARK' : 'LIGHT'}
         {theme ?

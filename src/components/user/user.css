@@ -1,5 +1,5 @@
 .user-container {
-  width: 60%;
+  width: 950px;
 
   margin-top: 20px;
 
@@ -8,6 +8,7 @@
   padding: 40px 20px 30px 20px;
 
   display: flex;
+  overflow: hidden;
 }
 
 .user-left {
@@ -29,7 +30,8 @@
   display: flex;
   justify-content: space-between;
 }
-.user-right-name-wrapper > h1 {
+.user-right-name-wrapper > a {
+  text-decoration: none;
   color: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -86,4 +88,84 @@
 }
 .additional-info i {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .user-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .user-container {
+    padding: 25px 5px 15px 5px;
+  }
+
+  .user-left {
+    padding: 10px;
+  }
+
+  .user-right {
+    font-size: 14px;
+  }
+
+  .user-right-name-wrapper > a {
+    font-size: 14px;
+  }
+
+  .user-right-name-wrapper > p {
+    font-size: 12px;
+  }
+
+  .bio {
+    font-size: 14px;
+  }
+
+  .repos-div {
+    padding: 15px 10px;
+  }
+  .repos-div div p:nth-child(1) {
+    font-size: 14px;
+  }
+  .repos-div div p:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .user-created {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .user-container {
+    flex-direction: column;
+  }
+  .user-left {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-left > img {
+    width: 40%;
+  }
+  .user-right {
+    width: 100%;
+  }
+  .user-right-name {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-right-name-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .user-created {
+    margin-top: 10px;
+  }
+  .bio {
+    text-align: center;
+  }
 }

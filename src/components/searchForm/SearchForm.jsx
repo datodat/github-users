@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+// Css
 import './search-form.css';
 
 const SearchForm = ({ searchHandler, theme, colors }) => {

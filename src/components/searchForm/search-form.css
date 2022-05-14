@@ -1,5 +1,5 @@
 .search-form {
-  width: 60%;
+  width: 950px;
 
   border: none;
   border-radius: 6px;
@@ -11,12 +11,14 @@
 }
 
 .search-form > i {
+  flex: 1;
   font-size: 20px;
   color: inherit;
   margin-left: 5px;
 }
 
 .search-form > input {
+  flex: 6;
   border: none;
   background: none;
 
@@ -32,6 +34,7 @@
 }
 
 .search-form > button {
+  flex: 1;
   padding: 16px;
   border: none;
   border-radius: 4px;
@@ -45,4 +48,21 @@
 }
 .search-form > button:hover {
   background-color: #2727b1;
+}
+
+@media screen and (max-width: 1000px) {
+  .search-form {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-form > input {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .search-form > button {
+    padding: 10px;
+    font-size: 12px;
+  }
 }

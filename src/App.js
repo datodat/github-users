@@ -12,7 +12,7 @@ const api = 'https://api.github.com/users/';
 // Colors
 const colors = [
   '#FFFFFF',
-  '#EEEEEE',
+  '#CCCCCC',
   '#161631',
   '#2c2c4c'
 ]

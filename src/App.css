@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -15,4 +16,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 30px; 
+  }
+}
+
+@media screen and (max-width: 350px) {
+  * {
+    font-size: 8px !important;
+  }
 }
